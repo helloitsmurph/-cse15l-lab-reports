@@ -49,7 +49,8 @@ Hopefully you've spent at least 10-15 minutes looking at that photo and if you h
 # Now we can finally login to ssh. 
 Open up VS Code. Select Terminal<-New Terminal at the top of the screen. 
 <img width="1399" alt="Screen Shot 2022-04-07 at 3 47 35 PM" src="https://user-images.githubusercontent.com/103203095/162331910-b46158d5-d795-4435-a85f-e6fb31712e1d.png">
-Awesome. Now in the command line copy and paste this: ssh cs15lsp22zz@ieng6.ucsd.edu
+Awesome. Now in the command line copy and paste this: 
+"ssh cs15lsp22zz@ieng6.ucsd.edu"
 
 *note* don't forget to replace with your own course specfic account. Hopefully your fountain pen handwriting was legible.
 
@@ -62,14 +63,15 @@ Congrats! Now you're connected. Great job. Ruby is even more proud of you.
 Now it's time to run some commands. Figure out what those commands means too. How exciting!!
 First try: cd, ls, pwd, mkdir, and cp. If you can't figure out exactly what each command is doing: ask!!
 Next try running:
-* cd ~
-* cd
-* ls -lat
-* ls -a
+" cd ~ "
+" cd ~ "
+" cd "
+" ls -lat "
+" ls -a "
 Fun colors should now appear.
 <img width="1440" alt="Screen Shot 2022-03-31 at 8 51 17 AM" src="https://user-images.githubusercontent.com/103203095/162335370-0d0ef007-da96-42ad-80c0-cfe6caaa0370.png">
 Play around with it for a while. Have some fun!
-**Now Log Out by either typing exit the enter buttom in terminal or simply press Ctrl-D**
+**Now Log Out by either typing "exit" then the enter buttom in terminal or simply press Ctrl-D**
 But we did so many steps to login in? Why are we logging out so soon?
 Great question! We logged out to figure out how to transfer files from your personal computer over to ssh.
 
@@ -77,27 +79,27 @@ Great question! We logged out to figure out how to transfer files from your pers
 
 For the purposes of this demo simply create a new fily in VS Code and name it WhereAmI.java and copy and paste this bad boi in there:
 
-class WhereAmI {
+" class WhereAmI {
   public static void main(String[] args) {
     System.out.println(System.getProperty("os.name"));
     System.out.println(System.getProperty("user.name"));
     System.out.println(System.getProperty("user.home"));
     System.out.println(System.getProperty("user.dir"));
   }
-}
+} "
 
 Compile and run in terminal. This was my result:
 <img width="1271" alt="Screen Shot 2022-04-07 at 7 42 05 PM" src="https://user-images.githubusercontent.com/103203095/162352586-81515e6b-98a9-4d03-a6e4-c7654f25d8c2.png">
 
 To copy it over to ssh simply run the command:
-scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/
+"scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/"
 
 *note* Don't forget to replace with **your** course username
 
 Put in your password same as before
 
 <img width="1271" alt="Screen Shot 2022-04-07 at 7 48 26 PM" src="https://user-images.githubusercontent.com/103203095/162353202-13e17163-daa0-400f-9b46-d478e269e220.png">
-Run the command ls and you should see the WhereAmI.java file in there. And you thought magicans never reveled their secrets.
+Run the command "ls" and you should see the WhereAmI.java file in there. And you thought magicans never reveled their secrets.
 
 # But that's annoying so let's this process easier and the _Key_ to making it less time lies in some funky symbols
 I am no genuis, but there are certain people in this world that are and they figured out a way to copy files over to SSH really quickly.
@@ -107,11 +109,12 @@ and you won't have to enter in your password anymore. Fun stuff. Let's do it!!
 
 Copy and paste the non-bolded parts into terminal:
 
-$ ssh-keygen
+"$ ssh-keygen"
 
 Generating public/private rsa key pair.
 
-Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa
+Enter file in which to save the key 
+" (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa
   
 Enter passphrase (empty for no passphrase): 
   
@@ -132,6 +135,7 @@ SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 <user-name>@<system>.local
 The key's randomart image is:
   
 <img width="1115" alt="Screen Shot 2022-04-07 at 9 53 37 PM" src="https://user-images.githubusercontent.com/103203095/162367328-a78c7e2e-3ec0-4138-bce6-ea7ada193de8.png">
+  "
 
 Personally I think the key could use more pizzazz:
 
@@ -157,8 +161,8 @@ Process is now super screamlined. Take a look at this:
   Few simple command line arguments and *boom* **ALL DONE**
   Here's it broken down into steps:
   1. Use the command line argument cd to make sure your currect directory is wherever you have decided to save the file you are trying to copy over
-  2. Copy the file over to SSH using scp using command:  scp WhereAmI.java cs15lsp22xx@ieng6.ucsd.edu:~/
-  3. next, using the keys established previously login to you can login to SSH, complie, and run the file all in the same command line arguement just use this:  ssh cs15lsp22xx@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI" 
+  2. Copy the file over to SSH using scp using command:  "scp WhereAmI.java cs15lsp22xx@ieng6.ucsd.edu:~/"
+  3. next, using the keys established previously login to you can login to SSH, complie, and run the file all in the same command line arguement just use this:  "ssh cs15lsp22xx@ieng6.ucsd.edu javac WhereAmI.java; java WhereAmI" 
 **as always, don't forget to change the username to your own**
   ---
   Okay that's it. We're done here. Thanks!!!
