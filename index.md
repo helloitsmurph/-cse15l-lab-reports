@@ -1,2 +1,3 @@
-# Saturday Movie Nights 
-I watched the movie *Monsters Inc* the other day. Randall is kind of mean :/. 
+# CSE 15L Lab Reports
+Week 2 Lab Report #1:https://github.com/helloitsmurph/-cse15l-lab-reports/blob/CSE15L-Lab-Reports/Week2LabReport.md
+Week 4 Lab Report #2: https://github.com/helloitsmurph/-cse15l-lab-reports/blob/CSE15L-Lab-Report%232/CSE15L-Week4-Lab-Report.md
