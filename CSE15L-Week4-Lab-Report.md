@@ -2,12 +2,11 @@
 ## Introduction to Debugging 
 ### The following was adapted by "How to Debug - Embedded in Academia" by John Regehr
 Something that all programmers, both beginners and the homies making the big buckaroos, have to go through almost every single day is a process
-called debugging. Now the origin of the phrase actually came from a literal bug that was causing a malfunction in the hardware of a computer (back when 
-computers **DEFINITELY** could not fit on your lap. Actually, there once was a time when computers would take up entire warefouses). Basically, the phrase 
-refers to fixing any problem that is causing the computer to not give the expected output. Now, I know you probably just thought that sounds broad and vague. 
-And you would be absolutely correct. Which is why programmers often use these things called symptoms to try and spot problems with their code and will use these 
-symptoms to try and track down what exactly is causing the error in the first place. Really much like talking to a doctor and telling them how you've been
-feeling lately in the hopes that they can reccommend something that will help you feel better. Except you are the doctor and your code is the patient. 
+called debugging. The origin of the phrase actually came from a literal bug that was causing a malfunction in the hardware of a computer (back when 
+computers **DEFINITELY** could not fit on your lap. Still, the phrase is still used to refer to fixing any problem that is causing the computer to not give the expected output. 
+
+Now, I know you probably just thought that sounds broad and vague. 
+And you would be absolutely correct. Which is why programmers often use these things called symptoms to try and spot problems with their code and will use these symptoms to try and track down what exactly is causing the error in the first place. Kind of like talking to a doctor and telling them how you've been feeling lately in the hopes that they can reccommend something that will help you feel better. Except you are the doctor and your code is the patient. 
 
 ---
 ## Debugging in Practice
@@ -36,13 +35,14 @@ So, as a group we decided this was the direction we wanted to head in. Usiing a 
 given to us orginally to pull out the links that we needed in the file. Thinking back on it now, I don't know what I orginally decided "Oh I'll start from scratch" import Scanner class
 and work from there. Hindsight really is the best vision one can have. But alas, still more problems. The code had no way of seeing if something was an image or a link. For this program, we
 only wanted links to be returned.
+
 ## Strategy #3 Checking If Something is an Image
 <img width="672" alt="Screen Shot 2022-04-24 at 6 29 04 PM" src="https://user-images.githubusercontent.com/103203095/165006453-ba938bf9-a6d1-4960-a388-5f3331409fdd.png">
 Link to test file causing error: https://github.com/helloitsmurph/markdown-parser/blob/main/test6-file.md
 So, had  to modify the code to make sure that the program could recognize that something was a image and not put it in terminal as a link.
 <img width="1228" alt="Screen Shot 2022-04-24 at 6 40 52 PM" src="https://user-images.githubusercontent.com/103203095/165007175-61be68db-c0f3-4409-a40e-40cc7753b4ba.png">
 So now this should make sure only correctly formated links can get printed into terminal. *Nice*
+
 ## Final thoughts
-Awesome. Now the code was taken to a almost-there-not-quite working phase to a much more robust and can easily tackle a multitude of more problems than the original code that we
-started with could. Awesome!!
+Awesome. Now the code was taken to a almost-there-not-quite working phase to a much more robust and can easily tackle a multitude of more problems. Awesome!!
 
