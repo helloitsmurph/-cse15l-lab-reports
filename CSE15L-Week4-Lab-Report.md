@@ -21,7 +21,9 @@ Terminal Output showing that Out of Memory Exception was thrown (meaning code se
 One of these things was the ```test-file.md``` not containing a second ")" or closeParen. Hazaa!! We have a symptom. Now, the real work 
 begins in trying to fix this code.
 
+
 Link to test file: https://github.com/helloitsmurph/markdown-parser/blob/main/test-file.md
+
 
 This is not good. It's hard on...well your hardrive. My computer is a MacBook and it sounds like it's going to take off mid-zoom lecture. So imagine how 
 hard the processor was working when I kept asking it to run code that wanted to run forever.
@@ -35,7 +37,9 @@ information when there aren't anymore lines of text in the file. A file cannot h
 Terminal output with this version of MardownParse.java:
 <img width="732" alt="Screen Shot 2022-05-02 at 4 50 00 PM" src="https://user-images.githubusercontent.com/103203095/166343769-de7a36bf-b0ec-4137-970b-66c160990e4e.png">
 
+
 Link to test file: https://github.com/helloitsmurph/markdown-parser/blob/main/test-file.md
+
 
 Same test file; however, this time the computer is not sent into an infinite loop and we are actually able to see what is in the file so *nice*. Nevertheless, the file pictured above is a very basic md reader, it does 
 not filter what is in the md file at all. This is a problem because the goal of this is for the code to get the specfic links which are contained in a file.
@@ -47,6 +51,7 @@ So, as a group we decided this was the direction we wanted to head in. Usiing a 
 given to us orginally to pull out the links that we needed in the file. Thinking back on it now, I don't know what I orginally decided "Oh I'll start from scratch" import Scanner class
 and work from there. Hindsight really is the best vision one can have. 
 <img width="672" alt="Screen Shot 2022-04-24 at 6 29 04 PM" src="https://user-images.githubusercontent.com/103203095/165006453-ba938bf9-a6d1-4960-a388-5f3331409fdd.png">
+
 Link to test file causing error: https://github.com/helloitsmurph/markdown-parser/blob/main/test6-file.md
 
 But alas, still more problems. The code had no way of seeing if something was an image or a link. For this program, we
