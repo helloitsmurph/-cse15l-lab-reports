@@ -1,3 +1,18 @@
-[index page link](https://github.com/helloitsmurph/-cse15l-lab-reports.git)
+#CSE15l Lab Report #3
+## Before We Get Started, Here's a Link to my Index Page
 
-Why hello again! Unless you have never had my lab reports before...in that case **WELCOME!!**
+[index page link](https://github.com/helloitsmurph/-cse15l-lab-reports.git)
+---
+## Streamling ssh Configuration
+Right now, I have a file on my notes app with the command to log into my specfic course account for CSE15l. I can never remember what to type into
+terminal so I always just copy and paste directly from this notes app file. Still, even this takes time. 
+
+Now the question is, how can we make this process go a lot smoother and subsequently faster?
+
+The answer: use a ssh Configuration 
+
+I found this [article](https://www.tecmint.com/configure-custom-ssh-connection-in-linux/) particilarily helpful. 
+
+This is what all the steps laid out in terminal looks like:
+
+
