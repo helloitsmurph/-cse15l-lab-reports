@@ -1,5 +1,5 @@
 # CSE 15L Lab Reports
-[Week 2 Lab Report #1](Week2LabReport.md)
+[Week 2 Lab Report #1](https://github.com/helloitsmurph/-cse15l-lab-reports/blob/CSE15L-Lab-Report%231/Week2LabReport.md)
 
 
 [Week 4 Lab Report #2](https://github.com/helloitsmurph/-cse15l-lab-reports/blob/CSE15L-Lab-Report%232/CSE15L-Week4-Lab-Report.md)
