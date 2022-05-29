@@ -2,6 +2,7 @@
 ## On this Lab Report we will be discussing more Markdown Parse!! 
 
 Link to my [Markdown-Parser Repo](https://github.com/helloitsmurph/markdown-parser.git)
+Link to the [reviewed]( https://github.com/tcarman/markdown-parser) Markdown-Parser Repo
 ---
 Okay, so...cutting right to the chase. I, along with my fellow peers in the CSE 15L course, were 
 given three snippets which we each put into three seperate markdown files. The content of these 
@@ -54,7 +55,7 @@ And then there's more text
 ```
 ## Okay, all up to speed? *Cool*
 Now the purpose of this was we were supposed to determine what the expected output of each of these files was supposed to be
-and how this matches up with our implemention as well as the TA's.
+and how this matches up with our implemention as well as the implementation of the group's we reviewed.
 
 ### Excepted Output
 VS code has this neat feature call preview which I used to help decipher what the output for each snippet should be.
@@ -77,7 +78,7 @@ Snippet 2: [a.com, a.com(()), example.com]
 Snippet 3: [https://www.twitter.com, https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule, https://cse.ucsd.edu/]
 
 And then made tests in the MarkdownParseTest.java file to check if either implemenation has these expected outputs.
-Here are the tests I wrote and added to the TA's MarkdownParseTest.java:
+Here are the tests I wrote and added to the file MarkdownParseTest.java:
 
 <img width="1160" alt="Screen Shot 2022-05-22 at 11 47 29 AM" src="https://user-images.githubusercontent.com/103203095/169710888-9bdadf08-0950-458b-aae4-012000dc5e29.png">
 
@@ -96,30 +97,27 @@ to some sort of problem that made it so it did recongize example.com as a link.
 
 Snippet 3: Only thought the course scheudle for CSE15L was a link even though there were 
 other links present.
-#### TA's Implementation 
-Again, all three test cases failed but not all for the same reasons mine did.
+#### Reviewed Group's Implementation 
+The Reviewed Group's Implementation passed for two of the Snippets, but not the third one.
 
-<img width="1160" alt="Screen Shot 2022-05-22 at 11 50 03 AM" src="https://user-images.githubusercontent.com/103203095/169710980-7da0625a-c51f-4b7c-85e7-d6adef2b7bf6.png">
+<img width="1158" alt="Screen Shot 2022-05-28 at 5 04 00 PM" src="https://user-images.githubusercontent.com/103203095/170846580-528bdc82-62eb-4d58-ac9c-8237c3aa5a8d.png">
 
-Snippet 1 the code recognized the wrong line to be a link and didn't recognize 
-ucsd.edu to be a link at all.
+Snippet 1 passed.
 
-Snippet 2 did not think example.com was a link either.
+Snippet 2 passed.
 
-Snippet 3 something was went wrong that the parse was looking for a link out of bounds. 
+Snippet 3 Shows an error in the code in which the program thought that the text before the link was a link in and of itself. So, the list of a files links contains unnecessary information.
 
-I think the underlining cause for all these test failing is this: I simply did not think to test for these very specfic edge cases. It's
-a commonality in all of computer science. Programmers most often want to make sure their code works for the most general cases, because these are the cases
+I think the underlining cause for all these test failing is this: I simply did not think to test for these very specfic edge cases. It's a commonality in all of computer science. Programmers most often want to make sure their code works for the most general cases, because these are the cases
 the code will most typically be run through. However, the outlining cases, thinking about the possible edge cases are actually the most important part of 
 writing good code. I think that was the point of this exercise as a whole. 
 
-### What could possibly be changed so cases would pass for my implementation
+### What could possibly be changed so cases would pass for my implementation?
 
 #### Snippet 1: 
 
 What caused "url.com" to not be seen as a link is a ` right before the bracket open.
-I think that some kind of method that checks for brakcets inside of strings would help in this case. That way 
-the openBracket and closeBracket variables are still updated accordingly.
+I think that some kind of method that checks for brakcets inside of strings would help in this case. That way the openBracket and closeBracket variables are still updated accordingly.
 
 #### Snippet 2: 
 A stack would work really well here to check to make sure that the open paren also 
