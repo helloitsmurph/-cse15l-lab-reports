@@ -35,8 +35,10 @@ interprets that part of the test file to be a link. So the TA's implementation i
 So, there actually are no links in this test file as VS Code preview feature interprets the contents to be an image. Which means in this case my output of [] was correct. 
 
 ### What Needs to be Done
-To fix the error in code that caused my implementation to produce the wrong output I think these lines need to be changed: 
+To fix the error in code that caused my implementation to produce the wrong output for test-file 511.md I think these lines need to be changed: 
 
 <img width="1131" alt="Screen Shot 2022-06-10 at 7 36 14 PM" src="https://user-images.githubusercontent.com/103203095/173169406-160c4c99-46e0-4f4a-8862-b2f489da70e9.png">
 
 Because for file 511.md my markdown didn't recongize /uri as a link. So it needs to check that every open bracket has a matching closed bracket and once this is done then the same needs to be checks that every open parenthesis has a closed parenthesis and then check inside of the open and closed parenthesis for links. 
+
+Then for 519.md my MarkdownParser.java gave the correct output so nothing has to change. 
